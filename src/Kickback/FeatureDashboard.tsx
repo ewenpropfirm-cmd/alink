@@ -56,8 +56,8 @@ export const FeatureDashboard: React.FC<
         style={{
           display: "flex",
           height: "100%",
-          padding: "40px 50px",
-          gap: 40,
+          padding: "30px 40px",
+          gap: 30,
         }}
       >
         {/* Left side - Text */}
@@ -75,28 +75,28 @@ export const FeatureDashboard: React.FC<
             style={{
               display: "inline-flex",
               alignItems: "center",
-              gap: 8,
-              padding: "8px 16px",
+              gap: 10,
+              padding: "12px 24px",
               background: "rgba(168,85,247,0.15)",
               borderRadius: 100,
               border: "1px solid rgba(168,85,247,0.3)",
-              marginBottom: 24,
+              marginBottom: 28,
               width: "fit-content",
             }}
           >
-            <span style={{ fontSize: 14, color: "#c084fc" }}>📊</span>
-            <span style={{ fontSize: 14, color: "#c084fc", fontWeight: 500 }}>Dashboard</span>
+            <span style={{ fontSize: 22, color: "#c084fc" }}>📊</span>
+            <span style={{ fontSize: 22, color: "#c084fc", fontWeight: 600 }}>Dashboard</span>
           </div>
 
           {/* Headline */}
           <h1
             style={{
-              fontSize: 68,
+              fontSize: 86,
               fontWeight: 800,
               color: "white",
-              lineHeight: 1.15,
+              lineHeight: 1.1,
               margin: 0,
-              marginBottom: 20,
+              marginBottom: 24,
               letterSpacing: "-0.03em",
             }}
           >
@@ -115,12 +115,12 @@ export const FeatureDashboard: React.FC<
 
           <p
             style={{
-              fontSize: 24,
+              fontSize: 28,
               color: "white",
-              lineHeight: 1.5,
+              lineHeight: 1.4,
               margin: 0,
-              marginBottom: 32,
-              maxWidth: 400,
+              marginBottom: 36,
+              maxWidth: 480,
               fontWeight: 500,
             }}
           >
@@ -128,7 +128,7 @@ export const FeatureDashboard: React.FC<
           </p>
 
           {/* Stats */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             {[
               { label: "Total Earned", value: "$2,388.75", icon: "💰" },
               { label: "Pending", value: "$245.50", icon: "⏳" },
@@ -139,17 +139,17 @@ export const FeatureDashboard: React.FC<
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: 16,
-                  padding: "16px 20px",
+                  gap: 20,
+                  padding: "20px 24px",
                   background: "rgba(255,255,255,0.05)",
-                  borderRadius: 12,
+                  borderRadius: 16,
                   border: "1px solid rgba(255,255,255,0.1)",
                 }}
               >
-                <span style={{ fontSize: 24 }}>{stat.icon}</span>
+                <span style={{ fontSize: 32 }}>{stat.icon}</span>
                 <div>
-                  <div style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>{stat.label}</div>
-                  <div style={{ fontSize: 24, fontWeight: 700, color: "white" }}>{stat.value}</div>
+                  <div style={{ fontSize: 16, color: "white" }}>{stat.label}</div>
+                  <div style={{ fontSize: 32, fontWeight: 700, color: "white" }}>{stat.value}</div>
                 </div>
               </div>
             ))}
@@ -170,7 +170,7 @@ export const FeatureDashboard: React.FC<
           <div
             style={{
               width: "100%",
-              maxWidth: 850,
+              maxWidth: 950,
               background: "white",
               borderRadius: 24,
               overflow: "hidden",
