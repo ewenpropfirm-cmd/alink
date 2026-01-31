@@ -56,18 +56,34 @@ import {
   FeatureOverview,
   featureOverviewSchema,
 } from "./TradeHub/FeatureOverview";
-import {
-  FeatureNews,
-  featureNewsSchema,
-} from "./TradeHub/FeatureNews";
+import { FeatureNews, featureNewsSchema } from "./TradeHub/FeatureNews";
 import {
   FeatureWhiteLabel,
   featureWhiteLabelSchema,
 } from "./TradeHub/FeatureWhiteLabel";
+import { TradeHubAppIcon, appIconSchema } from "./TradeHub/AppIcon";
+
+// Kickback imports
 import {
-  TradeHubAppIcon,
-  appIconSchema,
-} from "./TradeHub/AppIcon";
+  KickbackBanner,
+  kickbackBannerSchema,
+} from "./Kickback/KickbackBanner";
+import {
+  FeatureDashboard,
+  featureDashboardSchema,
+} from "./Kickback/FeatureDashboard";
+import {
+  FeatureHowItWorks,
+  featureHowItWorksSchema,
+} from "./Kickback/FeatureHowItWorks";
+import {
+  FeatureDeals,
+  featureDealsSchema,
+} from "./Kickback/FeatureDeals";
+import {
+  FeatureExtension,
+  featureExtensionSchema,
+} from "./Kickback/FeatureExtension";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -133,16 +149,6 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         schema={featureUseCasesSchema}
-        defaultProps={{}}
-      />
-      <Composition
-        id="AffiliateLinks-PromoVideo"
-        component={AffiliateLinksPromoVideo}
-        durationInFrames={540}
-        fps={30}
-        width={1920}
-        height={1080}
-        schema={promoVideoSchema}
         defaultProps={{}}
       />
 
@@ -238,6 +244,58 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{}}
       />
 
+      {/* Kickback - Whop Store Images */}
+      <Composition
+        id="Kickback-1-Banner"
+        component={KickbackBanner}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={kickbackBannerSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="Kickback-2-Dashboard"
+        component={FeatureDashboard}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureDashboardSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="Kickback-3-HowItWorks"
+        component={FeatureHowItWorks}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureHowItWorksSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="Kickback-4-Deals"
+        component={FeatureDeals}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureDealsSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="Kickback-5-Extension"
+        component={FeatureExtension}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureExtensionSchema}
+        defaultProps={{}}
+      />
+
       <Composition
         // You can take the "id" to render a video:
         // npx remotion render HelloWorld
@@ -257,7 +315,6 @@ export const RemotionRoot: React.FC = () => {
           logoColor2: "#86A8E7",
         }}
       />
-
       {/* Mount any React component to make it show up in the sidebar and work on it individually! */}
       <Composition
         id="OnlyLogo"
