@@ -46,8 +46,8 @@ export const FeatureExtension: React.FC<
         style={{
           display: "flex",
           height: "100%",
-          padding: "40px 50px",
-          gap: 60,
+          padding: "30px 40px",
+          gap: 40,
           alignItems: "center",
         }}
       >
@@ -70,9 +70,9 @@ export const FeatureExtension: React.FC<
             {/* Browser chrome mockup */}
             <div
               style={{
-                width: 500,
+                width: 700,
                 background: "#2d2d44",
-                borderRadius: 16,
+                borderRadius: 20,
                 overflow: "hidden",
                 boxShadow: "0 40px 80px rgba(0,0,0,0.5)",
               }}
@@ -143,31 +143,31 @@ export const FeatureExtension: React.FC<
               </div>
 
               {/* Page content preview */}
-              <div style={{ height: 300, background: "#fafafa", padding: 20 }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
+              <div style={{ height: 420, background: "#fafafa", padding: 28 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 28 }}>
                   <div
                     style={{
-                      width: 50,
-                      height: 50,
-                      borderRadius: 12,
+                      width: 70,
+                      height: 70,
+                      borderRadius: 16,
                       background: "linear-gradient(135deg, #1a1a2e, #2d2d44)",
                     }}
                   />
                   <div>
-                    <div style={{ fontSize: 16, fontWeight: 700, color: "#1a1a2e" }}>Cobra's Den</div>
-                    <div style={{ fontSize: 12, color: "#6b7280" }}>Premium Trading Signals</div>
+                    <div style={{ fontSize: 24, fontWeight: 700, color: "#1a1a2e" }}>Cobra's Den</div>
+                    <div style={{ fontSize: 16, color: "#6b7280" }}>Premium Trading Signals</div>
                   </div>
                 </div>
                 <div
                   style={{
-                    padding: 16,
+                    padding: 24,
                     background: "white",
-                    borderRadius: 12,
+                    borderRadius: 16,
                     border: "1px solid #e5e7eb",
                   }}
                 >
-                  <div style={{ fontSize: 24, fontWeight: 700, color: "#1a1a2e", marginBottom: 4 }}>$97/month</div>
-                  <div style={{ fontSize: 13, color: "#6b7280" }}>Join 5,000+ members</div>
+                  <div style={{ fontSize: 36, fontWeight: 700, color: "#1a1a2e", marginBottom: 8 }}>$97/month</div>
+                  <div style={{ fontSize: 18, color: "#6b7280" }}>Join 5,000+ members</div>
                 </div>
               </div>
             </div>
@@ -176,11 +176,11 @@ export const FeatureExtension: React.FC<
             <div
               style={{
                 position: "absolute",
-                top: 50,
-                right: -80,
-                width: 280,
+                top: 60,
+                right: -120,
+                width: 360,
                 background: "white",
-                borderRadius: 16,
+                borderRadius: 20,
                 overflow: "hidden",
                 boxShadow: "0 20px 60px rgba(0,0,0,0.4)",
                 border: "1px solid rgba(168,85,247,0.2)",
@@ -189,21 +189,21 @@ export const FeatureExtension: React.FC<
               {/* Popup header */}
               <div
                 style={{
-                  padding: 16,
+                  padding: 20,
                   background: "linear-gradient(135deg, #1a0a2e, #2d1b4e)",
                   display: "flex",
                   alignItems: "center",
-                  gap: 12,
+                  gap: 16,
                 }}
               >
                 <Img
                   src={staticFile("kickback-logo.png")}
-                  style={{ width: 32, height: 32, borderRadius: 8 }}
+                  style={{ width: 48, height: 48, borderRadius: 12 }}
                 />
                 <div>
                   <div
                     style={{
-                      fontSize: 16,
+                      fontSize: 22,
                       fontWeight: 700,
                       background: "linear-gradient(135deg, #a855f7, #f97316)",
                       WebkitBackgroundClip: "text",
@@ -212,31 +212,31 @@ export const FeatureExtension: React.FC<
                   >
                     Kickback
                   </div>
-                  <div style={{ fontSize: 11, color: "rgba(255,255,255,0.95)" }}>Whop Cashback</div>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.95)" }}>Whop Cashback</div>
                 </div>
               </div>
 
               {/* Cashback info */}
-              <div style={{ padding: 20 }}>
+              <div style={{ padding: 24 }}>
                 {/* Active status */}
                 <div
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    gap: 8,
-                    marginBottom: 16,
+                    gap: 10,
+                    marginBottom: 20,
                   }}
                 >
                   <div
                     style={{
-                      width: 10,
-                      height: 10,
+                      width: 14,
+                      height: 14,
                       borderRadius: "50%",
                       background: "#22c55e",
                       boxShadow: "0 0 8px #22c55e",
                     }}
                   />
-                  <span style={{ fontSize: 14, color: "#22c55e", fontWeight: 600 }}>
+                  <span style={{ fontSize: 18, color: "#22c55e", fontWeight: 600 }}>
                     Cashback Active
                   </span>
                 </div>
@@ -245,19 +245,19 @@ export const FeatureExtension: React.FC<
                 <div
                   style={{
                     background: "linear-gradient(135deg, #faf5ff, #fff7ed)",
-                    borderRadius: 12,
-                    padding: 16,
-                    marginBottom: 16,
+                    borderRadius: 16,
+                    padding: 24,
+                    marginBottom: 20,
                     border: "1px solid rgba(168,85,247,0.2)",
                     textAlign: "center",
                   }}
                 >
-                  <div style={{ fontSize: 12, color: "#6b7280", marginBottom: 8 }}>
+                  <div style={{ fontSize: 16, color: "#6b7280", marginBottom: 8 }}>
                     Cashback available
                   </div>
                   <div
                     style={{
-                      fontSize: 48,
+                      fontSize: 64,
                       fontWeight: 800,
                       background: "linear-gradient(135deg, #a855f7, #f97316)",
                       WebkitBackgroundClip: "text",
@@ -274,12 +274,12 @@ export const FeatureExtension: React.FC<
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
-                    padding: "12px 0",
+                    padding: "16px 0",
                     borderTop: "1px solid #e5e7eb",
                   }}
                 >
-                  <span style={{ fontSize: 13, color: "#6b7280" }}>Wallet Balance</span>
-                  <span style={{ fontSize: 15, fontWeight: 700, color: "#1a1a2e" }}>$892.75</span>
+                  <span style={{ fontSize: 16, color: "#6b7280" }}>Wallet Balance</span>
+                  <span style={{ fontSize: 20, fontWeight: 700, color: "#1a1a2e" }}>$892.75</span>
                 </div>
               </div>
             </div>
@@ -300,8 +300,8 @@ export const FeatureExtension: React.FC<
             style={{
               display: "inline-flex",
               alignItems: "center",
-              gap: 8,
-              padding: "8px 16px",
+              gap: 10,
+              padding: "12px 24px",
               background: "rgba(34,197,94,0.15)",
               borderRadius: 100,
               border: "1px solid rgba(34,197,94,0.3)",
@@ -311,14 +311,14 @@ export const FeatureExtension: React.FC<
           >
             <div
               style={{
-                width: 8,
-                height: 8,
+                width: 12,
+                height: 12,
                 borderRadius: "50%",
                 background: "#22c55e",
                 boxShadow: "0 0 8px #22c55e",
               }}
             />
-            <span style={{ fontSize: 14, color: "#22c55e", fontWeight: 500 }}>
+            <span style={{ fontSize: 20, color: "#22c55e", fontWeight: 600 }}>
               Chrome Extension
             </span>
           </div>
@@ -364,7 +364,7 @@ export const FeatureExtension: React.FC<
           </p>
 
           {/* Features */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             {[
               { icon: "🟢", text: "Green icon when cashback is available" },
               { icon: "💰", text: "See cashback % before purchase" },
@@ -375,11 +375,11 @@ export const FeatureExtension: React.FC<
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: 12,
+                  gap: 16,
                 }}
               >
-                <span style={{ fontSize: 20 }}>{feature.icon}</span>
-                <span style={{ fontSize: 16, color: "white" }}>{feature.text}</span>
+                <span style={{ fontSize: 28 }}>{feature.icon}</span>
+                <span style={{ fontSize: 22, color: "white", fontWeight: 500 }}>{feature.text}</span>
               </div>
             ))}
           </div>
