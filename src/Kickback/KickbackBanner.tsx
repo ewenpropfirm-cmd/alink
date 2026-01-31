@@ -199,7 +199,7 @@ export const KickbackBanner: React.FC<
           <div
             style={{
               width: "100%",
-              maxWidth: 800,
+              maxWidth: 900,
               background: "rgba(255,255,255,0.05)",
               borderRadius: 24,
               border: "1px solid rgba(255,255,255,0.1)",
@@ -321,19 +321,19 @@ export const KickbackBanner: React.FC<
           <div
             style={{
               position: "absolute",
-              bottom: 40,
-              left: -40,
+              bottom: 60,
+              left: -60,
               background: "white",
-              borderRadius: 16,
-              padding: 20,
+              borderRadius: 20,
+              padding: 28,
               boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
               zIndex: 20,
             }}
           >
-            <div style={{ fontSize: 12, color: "#6b7280", marginBottom: 4 }}>Total Earned</div>
+            <div style={{ fontSize: 16, color: "#6b7280", marginBottom: 6 }}>Total Earned</div>
             <div
               style={{
-                fontSize: 32,
+                fontSize: 44,
                 fontWeight: 700,
                 background: "linear-gradient(135deg, #a855f7, #f97316)",
                 WebkitBackgroundClip: "text",
@@ -342,36 +342,36 @@ export const KickbackBanner: React.FC<
             >
               $2,388.75
             </div>
-            <div style={{ fontSize: 13, color: "#10b981", fontWeight: 500 }}>↑ Lifetime earnings</div>
+            <div style={{ fontSize: 18, color: "#10b981", fontWeight: 500 }}>↑ Lifetime earnings</div>
           </div>
 
           {/* Floating extension popup */}
           <div
             style={{
               position: "absolute",
-              top: 20,
-              right: -20,
+              top: 10,
+              right: -30,
               background: "linear-gradient(135deg, #1a0a2e, #2d1b4e)",
-              borderRadius: 12,
-              padding: 16,
+              borderRadius: 16,
+              padding: 24,
               boxShadow: "0 20px 60px rgba(0,0,0,0.4)",
               zIndex: 20,
               border: "1px solid rgba(168,85,247,0.3)",
             }}
           >
-            <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
               <div
                 style={{
-                  width: 8,
-                  height: 8,
+                  width: 12,
+                  height: 12,
                   borderRadius: "50%",
                   background: "#22c55e",
                   boxShadow: "0 0 8px #22c55e",
                 }}
               />
-              <span style={{ fontSize: 12, color: "rgba(255,255,255,0.8)" }}>Cashback Active</span>
+              <span style={{ fontSize: 18, color: "white" }}>Cashback Active</span>
             </div>
-            <div style={{ fontSize: 24, fontWeight: 700, color: "white" }}>18%</div>
+            <div style={{ fontSize: 36, fontWeight: 700, color: "white" }}>18%</div>
           </div>
         </div>
       </div>
@@ -381,18 +381,18 @@ export const KickbackBanner: React.FC<
         style={{
           position: "absolute",
           bottom: 40,
-          left: 80,
+          left: 50,
           display: "flex",
           alignItems: "center",
-          gap: 12,
-          padding: "16px 28px",
+          gap: 14,
+          padding: "20px 36px",
           background: "rgba(168,85,247,0.1)",
           borderRadius: 100,
           border: "1px solid rgba(168,85,247,0.2)",
         }}
       >
-        <span style={{ fontSize: 20, color: "white", fontWeight: 500 }}>Chrome Extension for</span>
-        <span style={{ fontSize: 22, fontWeight: 700, color: "white" }}>Whop</span>
+        <span style={{ fontSize: 26, color: "white", fontWeight: 500 }}>Chrome Extension for</span>
+        <span style={{ fontSize: 30, fontWeight: 700, color: "white" }}>Whop</span>
       </div>
     </AbsoluteFill>
   );
