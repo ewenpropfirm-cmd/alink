@@ -168,14 +168,14 @@ export const KickbackBanner: React.FC<
                 <div
                   key={feature}
                   style={{
-                    padding: "12px 24px",
+                    padding: "16px 32px",
                     borderRadius: 100,
                     background: "rgba(168,85,247,0.15)",
                     backdropFilter: "blur(10px)",
                     border: "1px solid rgba(168,85,247,0.3)",
                     color: "white",
-                    fontSize: 16,
-                    fontWeight: 500,
+                    fontSize: 22,
+                    fontWeight: 600,
                   }}
                 >
                   {feature}
@@ -384,15 +384,15 @@ export const KickbackBanner: React.FC<
           left: 80,
           display: "flex",
           alignItems: "center",
-          gap: 10,
-          padding: "12px 20px",
+          gap: 12,
+          padding: "16px 28px",
           background: "rgba(168,85,247,0.1)",
           borderRadius: 100,
           border: "1px solid rgba(168,85,247,0.2)",
         }}
       >
-        <span style={{ fontSize: 14, color: "rgba(255,255,255,0.95)" }}>Chrome Extension for</span>
-        <span style={{ fontSize: 16, fontWeight: 700, color: "white" }}>Whop</span>
+        <span style={{ fontSize: 20, color: "white", fontWeight: 500 }}>Chrome Extension for</span>
+        <span style={{ fontSize: 22, fontWeight: 700, color: "white" }}>Whop</span>
       </div>
     </AbsoluteFill>
   );
