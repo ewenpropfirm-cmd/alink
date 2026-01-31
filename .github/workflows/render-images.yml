@@ -1,0 +1,70 @@
+name: Render Images
+
+on:
+  workflow_dispatch:
+    inputs:
+      app:
+        description: 'Which app to render?'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - affiliate-links
+          - trade-hub
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Create output directory
+        run: mkdir -p out/affiliate-links out/trade-hub
+
+      - name: Render Affiliate Links images
+        if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'affiliate-links' }}
+        run: |
+          npx remotion still 1-AffiliateLinksBanner out/affiliate-links/1-banner.png
+          npx remotion still 2-FeatureAnalytics out/affiliate-links/2-analytics.png
+          npx remotion still 3-FeatureTemplates out/affiliate-links/3-templates.png
+          npx remotion still 4-FeatureAdmin out/affiliate-links/4-admin.png
+          npx remotion still 5-FeatureShowcase out/affiliate-links/5-showcase.png
+          npx remotion still 6-FeatureUseCases out/affiliate-links/6-use-cases.png
+
+      - name: Render Trade Hub images
+        if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'trade-hub' }}
+        run: |
+          npx remotion still TradeHub-1-Banner out/trade-hub/1-banner.png
+          npx remotion still TradeHub-2-Calendar out/trade-hub/2-calendar.png
+          npx remotion still TradeHub-3-Calculator out/trade-hub/3-calculator.png
+          npx remotion still TradeHub-4-HeatMap out/trade-hub/4-heatmap.png
+          npx remotion still TradeHub-5-Partners out/trade-hub/5-partners.png
+          npx remotion still TradeHub-6-Overview out/trade-hub/6-overview.png
+          npx remotion still TradeHub-7-News out/trade-hub/7-news.png
+          npx remotion still TradeHub-8-WhiteLabel out/trade-hub/8-whitelabel.png
+
+      - name: Upload Affiliate Links images
+        if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'affiliate-links' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: affiliate-links-images
+          path: out/affiliate-links/
+
+      - name: Upload Trade Hub images
+        if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'trade-hub' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: trade-hub-images
+          path: out/trade-hub/
