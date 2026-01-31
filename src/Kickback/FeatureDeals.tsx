@@ -145,7 +145,7 @@ export const FeatureDeals: React.FC<
               Deals
             </span>
           </h1>
-          <p style={{ fontSize: 20, color: "rgba(255,255,255,0.6)", margin: 0 }}>
+          <p style={{ fontSize: 24, color: "white", margin: 0, fontWeight: 500 }}>
             Check out our newest cashback opportunities
           </p>
         </div>

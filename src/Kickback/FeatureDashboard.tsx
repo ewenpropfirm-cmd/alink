@@ -115,12 +115,13 @@ export const FeatureDashboard: React.FC<
 
           <p
             style={{
-              fontSize: 20,
-              color: "rgba(255,255,255,0.6)",
-              lineHeight: 1.6,
+              fontSize: 24,
+              color: "white",
+              lineHeight: 1.5,
               margin: 0,
               marginBottom: 32,
               maxWidth: 400,
+              fontWeight: 500,
             }}
           >
             See your total earnings, pending balance, and available funds all in one place.

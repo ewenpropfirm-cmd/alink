@@ -212,7 +212,7 @@ export const FeatureExtension: React.FC<
                   >
                     Kickback
                   </div>
-                  <div style={{ fontSize: 11, color: "rgba(255,255,255,0.6)" }}>Whop Cashback</div>
+                  <div style={{ fontSize: 11, color: "rgba(255,255,255,0.95)" }}>Whop Cashback</div>
                 </div>
               </div>
 
@@ -350,12 +350,13 @@ export const FeatureExtension: React.FC<
 
           <p
             style={{
-              fontSize: 20,
-              color: "rgba(255,255,255,0.6)",
-              lineHeight: 1.6,
+              fontSize: 24,
+              color: "white",
+              lineHeight: 1.5,
               margin: 0,
               marginBottom: 32,
               maxWidth: 420,
+              fontWeight: 500,
             }}
           >
             The extension shows you the cashback percentage available on every Whop product.
@@ -378,7 +379,7 @@ export const FeatureExtension: React.FC<
                 }}
               >
                 <span style={{ fontSize: 20 }}>{feature.icon}</span>
-                <span style={{ fontSize: 16, color: "rgba(255,255,255,0.8)" }}>{feature.text}</span>
+                <span style={{ fontSize: 16, color: "white" }}>{feature.text}</span>
               </div>
             ))}
           </div>

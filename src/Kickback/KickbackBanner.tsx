@@ -142,12 +142,13 @@ export const KickbackBanner: React.FC<
           {/* Subtitle */}
           <p
             style={{
-              fontSize: 24,
-              color: "rgba(255,255,255,0.7)",
-              lineHeight: 1.6,
+              fontSize: 28,
+              color: "white",
+              lineHeight: 1.5,
               margin: 0,
               marginBottom: 40,
               maxWidth: 520,
+              fontWeight: 500,
             }}
           >
             The Chrome extension that gives you 6-50% cashback on Whop purchases.
@@ -390,7 +391,7 @@ export const KickbackBanner: React.FC<
           border: "1px solid rgba(168,85,247,0.2)",
         }}
       >
-        <span style={{ fontSize: 14, color: "rgba(255,255,255,0.6)" }}>Chrome Extension for</span>
+        <span style={{ fontSize: 14, color: "rgba(255,255,255,0.95)" }}>Chrome Extension for</span>
         <span style={{ fontSize: 16, fontWeight: 700, color: "white" }}>Whop</span>
       </div>
     </AbsoluteFill>
