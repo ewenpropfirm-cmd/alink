@@ -60,6 +60,10 @@ import {
   FeatureWhiteLabel,
   featureWhiteLabelSchema,
 } from "./TradeHub/FeatureWhiteLabel";
+import {
+  TradeHubAppIcon,
+  appIconSchema,
+} from "./TradeHub/AppIcon";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -207,6 +211,16 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         schema={featureWhiteLabelSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="TradeHub-AppIcon"
+        component={TradeHubAppIcon}
+        durationInFrames={1}
+        fps={30}
+        width={1024}
+        height={1024}
+        schema={appIconSchema}
         defaultProps={{}}
       />
 

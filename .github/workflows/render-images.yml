@@ -54,6 +54,7 @@ jobs:
           npx remotion still TradeHub-6-Overview out/trade-hub/6-overview.png
           npx remotion still TradeHub-7-News out/trade-hub/7-news.png
           npx remotion still TradeHub-8-WhiteLabel out/trade-hub/8-whitelabel.png
+          npx remotion still TradeHub-AppIcon out/trade-hub/app-icon.png
 
       - name: Upload Affiliate Links images
         if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'affiliate-links' }}
