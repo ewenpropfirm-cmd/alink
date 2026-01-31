@@ -12,6 +12,7 @@ on:
           - all
           - affiliate-links
           - trade-hub
+          - kickback
       include_video:
         description: 'Also render promo videos?'
         required: true
@@ -39,7 +40,7 @@ jobs:
         run: npm ci
 
       - name: Create output directory
-        run: mkdir -p out/affiliate-links out/trade-hub
+        run: mkdir -p out/affiliate-links out/trade-hub out/kickback
 
       - name: Render Affiliate Links images
         if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'affiliate-links' }}
@@ -77,6 +78,22 @@ jobs:
         with:
           name: trade-hub-images
           path: out/trade-hub/
+
+      - name: Render Kickback images
+        if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'kickback' }}
+        run: |
+          npx remotion still Kickback-1-Banner out/kickback/1-banner.png
+          npx remotion still Kickback-2-Dashboard out/kickback/2-dashboard.png
+          npx remotion still Kickback-3-HowItWorks out/kickback/3-how-it-works.png
+          npx remotion still Kickback-4-Deals out/kickback/4-deals.png
+          npx remotion still Kickback-5-Extension out/kickback/5-extension.png
+
+      - name: Upload Kickback images
+        if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'kickback' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: kickback-images
+          path: out/kickback/
 
       - name: Create videos directory
         if: ${{ github.event.inputs.include_video == 'yes' }}
