@@ -1,4 +1,4 @@
-import { AbsoluteFill, Img, staticFile } from "remotion";
+import { AbsoluteFill } from "remotion";
 import { z } from "zod";
 
 export const whopReviewSchema = z.object({});
@@ -136,33 +136,6 @@ export const WhopReview: React.FC<z.infer<typeof whopReviewSchema>> = () => {
         </div>
       </div>
 
-      {/* Kickback logo bottom right */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: 50,
-          right: 60,
-          display: "flex",
-          alignItems: "center",
-          gap: 14,
-        }}
-      >
-        <Img
-          src={staticFile("kickback-logo.png")}
-          style={{ width: 50, height: 50, borderRadius: 12 }}
-        />
-        <span
-          style={{
-            fontSize: 28,
-            fontWeight: 700,
-            background: "linear-gradient(135deg, #a855f7, #f97316)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
-        >
-          Kickback
-        </span>
-      </div>
     </AbsoluteFill>
   );
 };
