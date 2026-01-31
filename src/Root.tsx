@@ -85,6 +85,11 @@ import {
   featureExtensionSchema,
 } from "./Kickback/FeatureExtension";
 
+// Blog imports
+import { WhopReview, whopReviewSchema } from "./Blog/WhopReview";
+import { WhopVsGumroad, whopVsGumroadSchema } from "./Blog/WhopVsGumroad";
+import { SaveMoney, saveMoneySchema } from "./Blog/SaveMoney";
+
 // Each <Composition> is an entry in the sidebar!
 
 export const RemotionRoot: React.FC = () => {
@@ -293,6 +298,38 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         schema={featureExtensionSchema}
+        defaultProps={{}}
+      />
+
+      {/* Blog Article Images */}
+      <Composition
+        id="Blog-1-WhopReview"
+        component={WhopReview}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={whopReviewSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="Blog-2-WhopVsGumroad"
+        component={WhopVsGumroad}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={whopVsGumroadSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="Blog-3-SaveMoney"
+        component={SaveMoney}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={saveMoneySchema}
         defaultProps={{}}
       />
 

@@ -13,6 +13,7 @@ on:
           - affiliate-links
           - trade-hub
           - kickback
+          - blog
       include_video:
         description: 'Also render promo videos?'
         required: true
@@ -40,7 +41,7 @@ jobs:
         run: npm ci
 
       - name: Create output directory
-        run: mkdir -p out/affiliate-links out/trade-hub out/kickback
+        run: mkdir -p out/affiliate-links out/trade-hub out/kickback out/blog
 
       - name: Render Affiliate Links images
         if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'affiliate-links' }}
@@ -94,6 +95,20 @@ jobs:
         with:
           name: kickback-images
           path: out/kickback/
+
+      - name: Render Blog images
+        if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'blog' }}
+        run: |
+          npx remotion still Blog-1-WhopReview out/blog/1-whop-review.png
+          npx remotion still Blog-2-WhopVsGumroad out/blog/2-whop-vs-gumroad.png
+          npx remotion still Blog-3-SaveMoney out/blog/3-save-money.png
+
+      - name: Upload Blog images
+        if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'blog' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: blog-images
+          path: out/blog/
 
       - name: Create videos directory
         if: ${{ github.event.inputs.include_video == 'yes' }}
