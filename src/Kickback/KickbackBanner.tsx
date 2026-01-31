@@ -78,31 +78,31 @@ export const KickbackBanner: React.FC<
             flex: 1,
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center",
+            justifyContent: "flex-start",
             zIndex: 10,
           }}
         >
-          {/* Logo and brand */}
+          {/* Logo and brand - top left */}
           <div
             style={{
               display: "flex",
               alignItems: "center",
               gap: 16,
-              marginBottom: 40,
+              marginBottom: 50,
             }}
           >
             <Img
               src={staticFile("kickback-logo.png")}
               style={{
-                width: 72,
-                height: 72,
-                borderRadius: 16,
+                width: 80,
+                height: 80,
+                borderRadius: 18,
                 boxShadow: "0 8px 32px rgba(168,85,247,0.4)",
               }}
             />
             <span
               style={{
-                fontSize: 36,
+                fontSize: 42,
                 fontWeight: 700,
                 background: "linear-gradient(135deg, #a855f7 0%, #f97316 100%)",
                 WebkitBackgroundClip: "text",
@@ -117,12 +117,12 @@ export const KickbackBanner: React.FC<
           {/* Main headline */}
           <h1
             style={{
-              fontSize: 82,
+              fontSize: 96,
               fontWeight: 800,
               color: "white",
-              lineHeight: 1.1,
+              lineHeight: 1.05,
               margin: 0,
-              marginBottom: 24,
+              marginBottom: 28,
               letterSpacing: "-0.03em",
             }}
           >
@@ -142,12 +142,12 @@ export const KickbackBanner: React.FC<
           {/* Subtitle */}
           <p
             style={{
-              fontSize: 28,
+              fontSize: 32,
               color: "white",
-              lineHeight: 1.5,
+              lineHeight: 1.4,
               margin: 0,
               marginBottom: 40,
-              maxWidth: 520,
+              maxWidth: 580,
               fontWeight: 500,
             }}
           >
