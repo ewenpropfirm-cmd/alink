@@ -2,12 +2,214 @@ import "./index.css";
 import { Composition } from "remotion";
 import { HelloWorld, myCompSchema } from "./HelloWorld";
 import { Logo, myCompSchema2 } from "./HelloWorld/Logo";
+import {
+  AffiliateLinksBanner,
+  affiliateLinksBannerSchema,
+} from "./AffiliateLinks/AffiliateLinksBanner";
+import {
+  FeatureAnalytics,
+  featureAnalyticsSchema,
+} from "./AffiliateLinks/FeatureAnalytics";
+import {
+  FeatureTemplates,
+  featureTemplatesSchema,
+} from "./AffiliateLinks/FeatureTemplates";
+import {
+  FeatureAdmin,
+  featureAdminSchema,
+} from "./AffiliateLinks/FeatureAdmin";
+import {
+  FeatureShowcase,
+  featureShowcaseSchema,
+} from "./AffiliateLinks/FeatureShowcase";
+import {
+  FeatureUseCases,
+  featureUseCasesSchema,
+} from "./AffiliateLinks/FeatureUseCases";
+
+// Trade Hub imports
+import {
+  TradeHubBanner,
+  tradeHubBannerSchema,
+} from "./TradeHub/TradeHubBanner";
+import {
+  FeatureCalendar,
+  featureCalendarSchema,
+} from "./TradeHub/FeatureCalendar";
+import {
+  FeatureCalculator,
+  featureCalculatorSchema,
+} from "./TradeHub/FeatureCalculator";
+import {
+  FeatureHeatMap,
+  featureHeatMapSchema,
+} from "./TradeHub/FeatureHeatMap";
+import {
+  FeaturePartners,
+  featurePartnersSchema,
+} from "./TradeHub/FeaturePartners";
+import {
+  FeatureOverview,
+  featureOverviewSchema,
+} from "./TradeHub/FeatureOverview";
+import {
+  FeatureNews,
+  featureNewsSchema,
+} from "./TradeHub/FeatureNews";
+import {
+  FeatureWhiteLabel,
+  featureWhiteLabelSchema,
+} from "./TradeHub/FeatureWhiteLabel";
 
 // Each <Composition> is an entry in the sidebar!
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* Affiliate Links - App Store Images */}
+      <Composition
+        id="1-AffiliateLinksBanner"
+        component={AffiliateLinksBanner}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={affiliateLinksBannerSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="2-FeatureAnalytics"
+        component={FeatureAnalytics}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureAnalyticsSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="3-FeatureTemplates"
+        component={FeatureTemplates}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureTemplatesSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="4-FeatureAdmin"
+        component={FeatureAdmin}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureAdminSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="5-FeatureShowcase"
+        component={FeatureShowcase}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureShowcaseSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="6-FeatureUseCases"
+        component={FeatureUseCases}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureUseCasesSchema}
+        defaultProps={{}}
+      />
+
+      {/* Trade Hub - App Store Images */}
+      <Composition
+        id="TradeHub-1-Banner"
+        component={TradeHubBanner}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={tradeHubBannerSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="TradeHub-2-Calendar"
+        component={FeatureCalendar}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureCalendarSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="TradeHub-3-Calculator"
+        component={FeatureCalculator}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureCalculatorSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="TradeHub-4-HeatMap"
+        component={FeatureHeatMap}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureHeatMapSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="TradeHub-5-Partners"
+        component={FeaturePartners}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featurePartnersSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="TradeHub-6-Overview"
+        component={FeatureOverview}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureOverviewSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="TradeHub-7-News"
+        component={FeatureNews}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureNewsSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="TradeHub-8-WhiteLabel"
+        component={FeatureWhiteLabel}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featureWhiteLabelSchema}
+        defaultProps={{}}
+      />
+
       <Composition
         // You can take the "id" to render a video:
         // npx remotion render HelloWorld
