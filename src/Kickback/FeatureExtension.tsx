@@ -289,10 +289,11 @@ export const FeatureExtension: React.FC<
         {/* Right side - Text */}
         <div
           style={{
-            flex: 0.8,
+            flex: 0.9,
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
+            paddingLeft: 40,
           }}
         >
           {/* Badge */}
@@ -318,7 +319,7 @@ export const FeatureExtension: React.FC<
                 boxShadow: "0 0 8px #22c55e",
               }}
             />
-            <span style={{ fontSize: 20, color: "#22c55e", fontWeight: 600 }}>
+            <span style={{ fontSize: 24, color: "#22c55e", fontWeight: 600 }}>
               Chrome Extension
             </span>
           </div>
@@ -326,12 +327,12 @@ export const FeatureExtension: React.FC<
           {/* Headline */}
           <h1
             style={{
-              fontSize: 64,
+              fontSize: 76,
               fontWeight: 800,
               color: "white",
-              lineHeight: 1.15,
+              lineHeight: 1.1,
               margin: 0,
-              marginBottom: 20,
+              marginBottom: 24,
               letterSpacing: "-0.03em",
             }}
           >
@@ -350,12 +351,12 @@ export const FeatureExtension: React.FC<
 
           <p
             style={{
-              fontSize: 24,
+              fontSize: 28,
               color: "white",
-              lineHeight: 1.5,
+              lineHeight: 1.4,
               margin: 0,
-              marginBottom: 32,
-              maxWidth: 420,
+              marginBottom: 36,
+              maxWidth: 500,
               fontWeight: 500,
             }}
           >
@@ -364,7 +365,7 @@ export const FeatureExtension: React.FC<
           </p>
 
           {/* Features */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
             {[
               { icon: "🟢", text: "Green icon when cashback is available" },
               { icon: "💰", text: "See cashback % before purchase" },
@@ -375,11 +376,11 @@ export const FeatureExtension: React.FC<
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: 16,
+                  gap: 18,
                 }}
               >
-                <span style={{ fontSize: 28 }}>{feature.icon}</span>
-                <span style={{ fontSize: 22, color: "white", fontWeight: 500 }}>{feature.text}</span>
+                <span style={{ fontSize: 32 }}>{feature.icon}</span>
+                <span style={{ fontSize: 26, color: "white", fontWeight: 500 }}>{feature.text}</span>
               </div>
             ))}
           </div>
