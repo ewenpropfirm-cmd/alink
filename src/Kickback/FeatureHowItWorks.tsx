@@ -75,14 +75,14 @@ export const FeatureHowItWorks: React.FC<
           display: "flex",
           flexDirection: "column",
           height: "100%",
-          padding: "60px 80px",
+          padding: "40px 50px",
         }}
       >
         {/* Header */}
         <div style={{ textAlign: "center", marginBottom: 60 }}>
           <h1
             style={{
-              fontSize: 56,
+              fontSize: 64,
               fontWeight: 800,
               color: "#1a1a2e",
               lineHeight: 1.2,
@@ -105,9 +105,10 @@ export const FeatureHowItWorks: React.FC<
           </h1>
           <p
             style={{
-              fontSize: 20,
-              color: "#6b7280",
+              fontSize: 24,
+              color: "#374151",
               margin: 0,
+              fontWeight: 500,
             }}
           >
             Install the extension and start earning cashback automatically

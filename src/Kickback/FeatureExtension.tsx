@@ -46,8 +46,8 @@ export const FeatureExtension: React.FC<
         style={{
           display: "flex",
           height: "100%",
-          padding: "60px 80px",
-          gap: 80,
+          padding: "40px 50px",
+          gap: 60,
           alignItems: "center",
         }}
       >
@@ -326,7 +326,7 @@ export const FeatureExtension: React.FC<
           {/* Headline */}
           <h1
             style={{
-              fontSize: 52,
+              fontSize: 64,
               fontWeight: 800,
               color: "white",
               lineHeight: 1.15,

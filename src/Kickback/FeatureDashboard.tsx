@@ -56,8 +56,8 @@ export const FeatureDashboard: React.FC<
         style={{
           display: "flex",
           height: "100%",
-          padding: "60px 80px",
-          gap: 60,
+          padding: "40px 50px",
+          gap: 40,
         }}
       >
         {/* Left side - Text */}
@@ -91,7 +91,7 @@ export const FeatureDashboard: React.FC<
           {/* Headline */}
           <h1
             style={{
-              fontSize: 56,
+              fontSize: 68,
               fontWeight: 800,
               color: "white",
               lineHeight: 1.15,
@@ -170,7 +170,7 @@ export const FeatureDashboard: React.FC<
           <div
             style={{
               width: "100%",
-              maxWidth: 750,
+              maxWidth: 850,
               background: "white",
               borderRadius: 24,
               overflow: "hidden",

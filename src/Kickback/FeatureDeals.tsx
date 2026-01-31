@@ -103,7 +103,7 @@ export const FeatureDeals: React.FC<
           display: "flex",
           flexDirection: "column",
           height: "100%",
-          padding: "60px 80px",
+          padding: "40px 50px",
         }}
       >
         {/* Header */}
@@ -125,7 +125,7 @@ export const FeatureDeals: React.FC<
           </div>
           <h1
             style={{
-              fontSize: 52,
+              fontSize: 64,
               fontWeight: 800,
               color: "white",
               lineHeight: 1.2,
