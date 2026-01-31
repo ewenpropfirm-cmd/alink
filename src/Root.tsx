@@ -26,6 +26,10 @@ import {
   FeatureUseCases,
   featureUseCasesSchema,
 } from "./AffiliateLinks/FeatureUseCases";
+import {
+  AffiliateLinksPromoVideo,
+  promoVideoSchema,
+} from "./AffiliateLinks/PromoVideo";
 
 // Trade Hub imports
 import {
@@ -129,6 +133,16 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         schema={featureUseCasesSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="AffiliateLinks-PromoVideo"
+        component={AffiliateLinksPromoVideo}
+        durationInFrames={540}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={promoVideoSchema}
         defaultProps={{}}
       />
 

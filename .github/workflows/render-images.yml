@@ -12,6 +12,14 @@ on:
           - all
           - affiliate-links
           - trade-hub
+      include_video:
+        description: 'Also render promo videos?'
+        required: true
+        default: 'no'
+        type: choice
+        options:
+          - 'no'
+          - 'yes'
 
 jobs:
   render:
@@ -69,3 +77,18 @@ jobs:
         with:
           name: trade-hub-images
           path: out/trade-hub/
+
+      - name: Create videos directory
+        if: ${{ github.event.inputs.include_video == 'yes' }}
+        run: mkdir -p out/videos
+
+      - name: Render Affiliate Links promo video
+        if: ${{ github.event.inputs.include_video == 'yes' && (github.event.inputs.app == 'all' || github.event.inputs.app == 'affiliate-links') }}
+        run: npx remotion render AffiliateLinks-PromoVideo out/videos/affiliate-links-promo.mp4
+
+      - name: Upload videos
+        if: ${{ github.event.inputs.include_video == 'yes' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: promo-videos
+          path: out/videos/
