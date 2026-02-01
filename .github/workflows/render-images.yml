@@ -14,6 +14,7 @@ on:
           - trade-hub
           - kickback
           - blog
+          - blog-save-money-kickback
       include_video:
         description: 'Also render promo videos?'
         required: true
@@ -110,6 +111,18 @@ jobs:
         with:
           name: blog-images
           path: out/blog/
+
+      - name: Render Save Money Kickback only
+        if: ${{ github.event.inputs.app == 'blog-save-money-kickback' }}
+        run: |
+          npx remotion still Blog-4-SaveMoneyKickback out/blog/4-save-money-kickback.webp --image-format=webp --quality=85
+
+      - name: Upload Save Money Kickback
+        if: ${{ github.event.inputs.app == 'blog-save-money-kickback' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: save-money-kickback
+          path: out/blog/4-save-money-kickback.webp
 
       - name: Create videos directory
         if: ${{ github.event.inputs.include_video == 'yes' }}
