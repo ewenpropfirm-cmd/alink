@@ -65,7 +65,7 @@ export const SaveMoneyKickback: React.FC<z.infer<typeof saveMoneyKickbackSchema>
         style={{
           display: "flex",
           height: "100%",
-          padding: "50px 70px",
+          padding: "40px 50px",
           alignItems: "center",
         }}
       >
@@ -83,28 +83,28 @@ export const SaveMoneyKickback: React.FC<z.infer<typeof saveMoneyKickbackSchema>
             style={{
               display: "inline-flex",
               alignItems: "center",
-              gap: 12,
-              padding: "14px 28px",
+              gap: 14,
+              padding: "16px 32px",
               background: "rgba(16,185,129,0.15)",
               borderRadius: 100,
               border: "1px solid rgba(16,185,129,0.3)",
-              marginBottom: 36,
+              marginBottom: 40,
               width: "fit-content",
             }}
           >
-            <span style={{ fontSize: 22 }}>💡</span>
-            <span style={{ fontSize: 22, color: "#34d399", fontWeight: 600 }}>GUIDE</span>
+            <span style={{ fontSize: 28 }}>💡</span>
+            <span style={{ fontSize: 28, color: "#34d399", fontWeight: 600 }}>GUIDE</span>
           </div>
 
           {/* Title */}
           <h1
             style={{
-              fontSize: 76,
+              fontSize: 92,
               fontWeight: 800,
               color: "white",
               lineHeight: 1.05,
               margin: 0,
-              marginBottom: 28,
+              marginBottom: 32,
               letterSpacing: "-0.03em",
             }}
           >
@@ -127,8 +127,8 @@ export const SaveMoneyKickback: React.FC<z.infer<typeof saveMoneyKickbackSchema>
             style={{
               display: "flex",
               alignItems: "center",
-              gap: 14,
-              fontSize: 32,
+              gap: 18,
+              fontSize: 40,
               color: "white",
               fontWeight: 500,
             }}
@@ -138,8 +138,8 @@ export const SaveMoneyKickback: React.FC<z.infer<typeof saveMoneyKickbackSchema>
               style={{
                 display: "flex",
                 alignItems: "center",
-                gap: 12,
-                padding: "10px 24px",
+                gap: 14,
+                padding: "14px 30px",
                 background: "rgba(168,85,247,0.15)",
                 borderRadius: 100,
                 border: "1px solid rgba(168,85,247,0.3)",
@@ -147,11 +147,11 @@ export const SaveMoneyKickback: React.FC<z.infer<typeof saveMoneyKickbackSchema>
             >
               <Img
                 src={staticFile("kickback-logo.png")}
-                style={{ width: 40, height: 40, borderRadius: 10 }}
+                style={{ width: 52, height: 52, borderRadius: 12 }}
               />
               <span
                 style={{
-                  fontSize: 28,
+                  fontSize: 36,
                   fontWeight: 700,
                   background: "linear-gradient(135deg, #a855f7, #f97316)",
                   WebkitBackgroundClip: "text",
@@ -177,8 +177,8 @@ export const SaveMoneyKickback: React.FC<z.infer<typeof saveMoneyKickbackSchema>
           {/* Big savings circle */}
           <div
             style={{
-              width: 380,
-              height: 380,
+              width: 440,
+              height: 440,
               borderRadius: "50%",
               background: "linear-gradient(135deg, rgba(168,85,247,0.15), rgba(251,146,60,0.1))",
               border: "3px solid rgba(168,85,247,0.3)",
@@ -192,16 +192,16 @@ export const SaveMoneyKickback: React.FC<z.infer<typeof saveMoneyKickbackSchema>
             <Img
               src={staticFile("kickback-logo.png")}
               style={{
-                width: 100,
-                height: 100,
-                borderRadius: 24,
-                marginBottom: 16,
+                width: 120,
+                height: 120,
+                borderRadius: 28,
+                marginBottom: 20,
                 boxShadow: "0 20px 60px rgba(168,85,247,0.4)",
               }}
             />
             <div
               style={{
-                fontSize: 72,
+                fontSize: 86,
                 fontWeight: 800,
                 background: "linear-gradient(135deg, #a855f7, #f97316)",
                 WebkitBackgroundClip: "text",
@@ -210,23 +210,23 @@ export const SaveMoneyKickback: React.FC<z.infer<typeof saveMoneyKickbackSchema>
             >
               6-50%
             </div>
-            <span style={{ fontSize: 26, color: "white", fontWeight: 600 }}>CASHBACK</span>
+            <span style={{ fontSize: 32, color: "white", fontWeight: 600 }}>CASHBACK</span>
           </div>
 
           {/* Floating elements */}
           <div
             style={{
               position: "absolute",
-              top: 30,
-              right: 40,
+              top: 20,
+              right: 30,
               background: "white",
-              borderRadius: 16,
-              padding: "16px 24px",
+              borderRadius: 20,
+              padding: "20px 32px",
               boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
             }}
           >
-            <div style={{ fontSize: 14, color: "#6b7280", marginBottom: 4 }}>You save</div>
-            <div style={{ fontSize: 32, fontWeight: 700, color: "#10b981" }}>$17.46</div>
+            <div style={{ fontSize: 18, color: "#6b7280", marginBottom: 6 }}>You save</div>
+            <div style={{ fontSize: 42, fontWeight: 700, color: "#10b981" }}>$17.46</div>
           </div>
 
           <div
