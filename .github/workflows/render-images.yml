@@ -102,6 +102,7 @@ jobs:
           npx remotion still Blog-1-WhopReview out/blog/1-whop-review.webp --image-format=webp --quality=85
           npx remotion still Blog-2-WhopVsGumroad out/blog/2-whop-vs-gumroad.webp --image-format=webp --quality=85
           npx remotion still Blog-3-SaveMoney out/blog/3-save-money.webp --image-format=webp --quality=85
+          npx remotion still Blog-4-SaveMoneyKickback out/blog/4-save-money-kickback.webp --image-format=webp --quality=85
 
       - name: Upload Blog images
         if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'blog' }}

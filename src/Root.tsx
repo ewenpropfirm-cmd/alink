@@ -89,6 +89,7 @@ import {
 import { WhopReview, whopReviewSchema } from "./Blog/WhopReview";
 import { WhopVsGumroad, whopVsGumroadSchema } from "./Blog/WhopVsGumroad";
 import { SaveMoney, saveMoneySchema } from "./Blog/SaveMoney";
+import { SaveMoneyKickback, saveMoneyKickbackSchema } from "./Blog/SaveMoneyKickback";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -330,6 +331,16 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         schema={saveMoneySchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="Blog-4-SaveMoneyKickback"
+        component={SaveMoneyKickback}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={saveMoneyKickbackSchema}
         defaultProps={{}}
       />
 
