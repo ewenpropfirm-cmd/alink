@@ -105,8 +105,8 @@ export const FeaturePricing: React.FC<z.infer<typeof featurePricingSchema>> = ()
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             {[
               "Daily picks for NBA, NFL, NCAAF & CBB",
-              "Discord community access",
               "+26% ROI last month",
+              "+64 Units CBB this season",
               "Cancel anytime",
             ].map((feature) => (
               <div

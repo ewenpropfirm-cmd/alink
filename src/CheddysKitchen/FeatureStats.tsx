@@ -91,7 +91,7 @@ export const FeatureStats: React.FC<z.infer<typeof featureStatsSchema>> = () => 
             { value: "+26%", label: "Last Month ROI", icon: "📈" },
             { value: "+64", label: "Units CBB Season", icon: "🏀" },
             { value: "Daily", label: "Fresh Picks", icon: "🔥" },
-            { value: "4", label: "Sports Covered", icon: "🏆" },
+            { value: "$20", label: "Per Month", icon: "💰" },
           ].map((stat) => (
             <div
               key={stat.label}
