@@ -77,7 +77,7 @@ export const Top5WhopApps: React.FC<z.infer<typeof top5WhopAppsSchema>> = () => 
             }}
           >
             <span style={{ fontSize: 28 }}>🚀</span>
-            <span style={{ fontSize: 28, color: "#a855f7", fontWeight: 600 }}>2025 GUIDE</span>
+            <span style={{ fontSize: 28, color: "#a855f7", fontWeight: 600 }}>2026 GUIDE</span>
           </div>
 
           {/* Title */}
