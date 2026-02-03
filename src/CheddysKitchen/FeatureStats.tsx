@@ -12,18 +12,6 @@ export const FeatureStats: React.FC<z.infer<typeof featureStatsSchema>> = () => 
         overflow: "hidden",
       }}
     >
-      {/* Grid pattern */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          backgroundImage: `
-            linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)
-          `,
-          backgroundSize: "50px 50px",
-        }}
-      />
 
       {/* Gradient orbs */}
       <div
@@ -70,7 +58,7 @@ export const FeatureStats: React.FC<z.infer<typeof featureStatsSchema>> = () => 
         {/* Title */}
         <h1
           style={{
-            fontSize: 72,
+            fontSize: 86,
             fontWeight: 800,
             color: "white",
             textAlign: "center",
@@ -119,17 +107,17 @@ export const FeatureStats: React.FC<z.infer<typeof featureStatsSchema>> = () => 
               <div style={{ fontSize: 48, marginBottom: 16 }}>{stat.icon}</div>
               <div
                 style={{
-                  fontSize: 56,
+                  fontSize: 64,
                   fontWeight: 800,
                   background: "linear-gradient(135deg, #22c55e, #fbbf24)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-                  marginBottom: 8,
+                  marginBottom: 10,
                 }}
               >
                 {stat.value}
               </div>
-              <div style={{ fontSize: 20, color: "rgba(255,255,255,0.7)", fontWeight: 500 }}>
+              <div style={{ fontSize: 24, color: "rgba(255,255,255,0.8)", fontWeight: 500 }}>
                 {stat.label}
               </div>
             </div>

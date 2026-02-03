@@ -12,18 +12,6 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
         overflow: "hidden",
       }}
     >
-      {/* Grid pattern */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          backgroundImage: `
-            linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)
-          `,
-          backgroundSize: "50px 50px",
-        }}
-      />
 
       {/* Gradient orbs */}
       <div
@@ -101,12 +89,12 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
           {/* Main headline */}
           <h1
             style={{
-              fontSize: 88,
+              fontSize: 100,
               fontWeight: 800,
               color: "white",
               lineHeight: 1.05,
               margin: 0,
-              marginBottom: 28,
+              marginBottom: 32,
               letterSpacing: "-0.03em",
             }}
           >
@@ -126,12 +114,12 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
           {/* Subtitle */}
           <p
             style={{
-              fontSize: 30,
+              fontSize: 34,
               color: "white",
               lineHeight: 1.4,
               margin: 0,
-              marginBottom: 36,
-              maxWidth: 550,
+              marginBottom: 40,
+              maxWidth: 600,
               fontWeight: 500,
             }}
           >
@@ -151,12 +139,12 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
               <div
                 key={feature}
                 style={{
-                  padding: "16px 32px",
+                  padding: "18px 36px",
                   borderRadius: 100,
                   background: "rgba(34,197,94,0.15)",
                   border: "1px solid rgba(34,197,94,0.3)",
                   color: "white",
-                  fontSize: 22,
+                  fontSize: 26,
                   fontWeight: 600,
                 }}
               >

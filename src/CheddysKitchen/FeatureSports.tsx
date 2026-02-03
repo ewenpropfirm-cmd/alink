@@ -19,18 +19,6 @@ export const FeatureSports: React.FC<z.infer<typeof featureSportsSchema>> = () =
         overflow: "hidden",
       }}
     >
-      {/* Grid pattern */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          backgroundImage: `
-            linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)
-          `,
-          backgroundSize: "50px 50px",
-        }}
-      />
 
       {/* Gradient orbs */}
       <div
@@ -85,7 +73,7 @@ export const FeatureSports: React.FC<z.infer<typeof featureSportsSchema>> = () =
 
           <h1
             style={{
-              fontSize: 76,
+              fontSize: 88,
               fontWeight: 800,
               color: "white",
               margin: 0,
@@ -145,15 +133,15 @@ export const FeatureSports: React.FC<z.infer<typeof featureSportsSchema>> = () =
               </div>
               <div
                 style={{
-                  fontSize: 42,
+                  fontSize: 48,
                   fontWeight: 800,
                   color: "white",
-                  marginBottom: 8,
+                  marginBottom: 10,
                 }}
               >
                 {sport.name}
               </div>
-              <div style={{ fontSize: 20, color: "rgba(255,255,255,0.6)" }}>
+              <div style={{ fontSize: 24, color: "rgba(255,255,255,0.7)" }}>
                 {sport.desc}
               </div>
             </div>

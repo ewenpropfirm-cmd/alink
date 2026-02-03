@@ -12,18 +12,6 @@ export const FeaturePricing: React.FC<z.infer<typeof featurePricingSchema>> = ()
         overflow: "hidden",
       }}
     >
-      {/* Grid pattern */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          backgroundImage: `
-            linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)
-          `,
-          backgroundSize: "50px 50px",
-        }}
-      />
 
       {/* Gradient orbs */}
       <div
@@ -76,12 +64,12 @@ export const FeaturePricing: React.FC<z.infer<typeof featurePricingSchema>> = ()
 
           <h1
             style={{
-              fontSize: 82,
+              fontSize: 96,
               fontWeight: 800,
               color: "white",
               lineHeight: 1.1,
               margin: 0,
-              marginBottom: 28,
+              marginBottom: 32,
               letterSpacing: "-0.03em",
             }}
           >
@@ -101,12 +89,12 @@ export const FeaturePricing: React.FC<z.infer<typeof featurePricingSchema>> = ()
 
           <p
             style={{
-              fontSize: 28,
+              fontSize: 32,
               color: "white",
-              lineHeight: 1.5,
+              lineHeight: 1.4,
               margin: 0,
-              marginBottom: 40,
-              maxWidth: 500,
+              marginBottom: 44,
+              maxWidth: 550,
               fontWeight: 500,
             }}
           >
@@ -144,7 +132,7 @@ export const FeaturePricing: React.FC<z.infer<typeof featurePricingSchema>> = ()
                 >
                   ✓
                 </div>
-                <span style={{ fontSize: 24, color: "white", fontWeight: 500 }}>{feature}</span>
+                <span style={{ fontSize: 26, color: "white", fontWeight: 500 }}>{feature}</span>
               </div>
             ))}
           </div>
