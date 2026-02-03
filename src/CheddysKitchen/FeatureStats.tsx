@@ -58,7 +58,7 @@ export const FeatureStats: React.FC<z.infer<typeof featureStatsSchema>> = () => 
         {/* Title */}
         <h1
           style={{
-            fontSize: 86,
+            fontSize: 100,
             fontWeight: 800,
             color: "white",
             textAlign: "center",
@@ -107,17 +107,17 @@ export const FeatureStats: React.FC<z.infer<typeof featureStatsSchema>> = () => 
               <div style={{ fontSize: 48, marginBottom: 16 }}>{stat.icon}</div>
               <div
                 style={{
-                  fontSize: 64,
+                  fontSize: 72,
                   fontWeight: 800,
                   background: "linear-gradient(135deg, #22c55e, #fbbf24)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-                  marginBottom: 10,
+                  marginBottom: 12,
                 }}
               >
                 {stat.value}
               </div>
-              <div style={{ fontSize: 24, color: "rgba(255,255,255,0.8)", fontWeight: 500 }}>
+              <div style={{ fontSize: 26, color: "rgba(255,255,255,0.8)", fontWeight: 500 }}>
                 {stat.label}
               </div>
             </div>

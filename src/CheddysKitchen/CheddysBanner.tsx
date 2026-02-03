@@ -89,12 +89,12 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
           {/* Main headline */}
           <h1
             style={{
-              fontSize: 100,
+              fontSize: 116,
               fontWeight: 800,
               color: "white",
-              lineHeight: 1.05,
+              lineHeight: 1.02,
               margin: 0,
-              marginBottom: 32,
+              marginBottom: 36,
               letterSpacing: "-0.03em",
             }}
           >
@@ -114,12 +114,12 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
           {/* Subtitle */}
           <p
             style={{
-              fontSize: 34,
+              fontSize: 38,
               color: "white",
               lineHeight: 1.4,
               margin: 0,
-              marginBottom: 40,
-              maxWidth: 600,
+              marginBottom: 44,
+              maxWidth: 650,
               fontWeight: 500,
             }}
           >
@@ -139,12 +139,12 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
               <div
                 key={feature}
                 style={{
-                  padding: "18px 36px",
+                  padding: "20px 40px",
                   borderRadius: 100,
                   background: "rgba(34,197,94,0.15)",
                   border: "1px solid rgba(34,197,94,0.3)",
                   color: "white",
-                  fontSize: 26,
+                  fontSize: 28,
                   fontWeight: 600,
                 }}
               >
@@ -181,12 +181,12 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
                 marginBottom: 32,
               }}
             >
-              <div style={{ fontSize: 24, color: "rgba(255,255,255,0.7)", marginBottom: 8 }}>
+              <div style={{ fontSize: 28, color: "rgba(255,255,255,0.8)", marginBottom: 10 }}>
                 Last Month ROI
               </div>
               <div
                 style={{
-                  fontSize: 120,
+                  fontSize: 140,
                   fontWeight: 800,
                   background: "linear-gradient(135deg, #22c55e, #fbbf24)",
                   WebkitBackgroundClip: "text",
