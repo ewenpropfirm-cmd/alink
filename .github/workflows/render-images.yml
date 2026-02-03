@@ -132,6 +132,7 @@ jobs:
           npx remotion still Cheddys-2-Stats out/cheddys-kitchen/2-stats.png
           npx remotion still Cheddys-3-Sports out/cheddys-kitchen/3-sports.png
           npx remotion still Cheddys-4-Pricing out/cheddys-kitchen/4-pricing.png
+          npx remotion still Cheddys-5-PricingTiers out/cheddys-kitchen/5-pricing-tiers.png
 
       - name: Upload Cheddys Kitchen images
         if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'cheddys-kitchen' }}

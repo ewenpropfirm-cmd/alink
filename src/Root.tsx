@@ -96,6 +96,7 @@ import { CheddysBanner, cheddysBannerSchema } from "./CheddysKitchen/CheddysBann
 import { FeatureStats as CheddysStats, featureStatsSchema as cheddysStatsSchema } from "./CheddysKitchen/FeatureStats";
 import { FeatureSports, featureSportsSchema } from "./CheddysKitchen/FeatureSports";
 import { FeaturePricing, featurePricingSchema } from "./CheddysKitchen/FeaturePricing";
+import { FeaturePricingTiers, featurePricingTiersSchema } from "./CheddysKitchen/FeaturePricingTiers";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -389,6 +390,16 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         schema={featurePricingSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="Cheddys-5-PricingTiers"
+        component={FeaturePricingTiers}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={featurePricingTiersSchema}
         defaultProps={{}}
       />
 
