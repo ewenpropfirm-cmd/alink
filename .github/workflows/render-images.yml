@@ -16,6 +16,7 @@ on:
           - blog
           - blog-save-money-kickback
           - blog-kickback-review
+          - blog-top5-whop-apps
           - cheddys-kitchen
       include_video:
         description: 'Also render promo videos?'
@@ -107,6 +108,7 @@ jobs:
           npx remotion still Blog-3-SaveMoney out/blog/3-save-money.webp --image-format=webp --quality=85
           npx remotion still Blog-4-SaveMoneyKickback out/blog/4-save-money-kickback.webp --image-format=webp --quality=85
           npx remotion still Blog-5-KickbackReview out/blog/5-kickback-review.webp --image-format=webp --quality=85
+          npx remotion still Blog-6-Top5WhopApps out/blog/6-top5-whop-apps.webp --image-format=webp --quality=85
 
       - name: Upload Blog images
         if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'blog' }}
@@ -138,6 +140,18 @@ jobs:
         with:
           name: kickback-review
           path: out/blog/5-kickback-review.webp
+
+      - name: Render Top 5 Whop Apps only
+        if: ${{ github.event.inputs.app == 'blog-top5-whop-apps' }}
+        run: |
+          npx remotion still Blog-6-Top5WhopApps out/blog/6-top5-whop-apps.webp --image-format=webp --quality=85
+
+      - name: Upload Top 5 Whop Apps
+        if: ${{ github.event.inputs.app == 'blog-top5-whop-apps' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: top5-whop-apps
+          path: out/blog/6-top5-whop-apps.webp
 
       - name: Render Cheddys Kitchen images
         if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'cheddys-kitchen' }}
