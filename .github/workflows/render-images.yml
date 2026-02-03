@@ -15,6 +15,7 @@ on:
           - kickback
           - blog
           - blog-save-money-kickback
+          - blog-kickback-review
           - cheddys-kitchen
       include_video:
         description: 'Also render promo videos?'
@@ -125,6 +126,18 @@ jobs:
         with:
           name: save-money-kickback
           path: out/blog/4-save-money-kickback.webp
+
+      - name: Render Kickback Review only
+        if: ${{ github.event.inputs.app == 'blog-kickback-review' }}
+        run: |
+          npx remotion still Blog-5-KickbackReview out/blog/5-kickback-review.webp --image-format=webp --quality=85
+
+      - name: Upload Kickback Review
+        if: ${{ github.event.inputs.app == 'blog-kickback-review' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: kickback-review
+          path: out/blog/5-kickback-review.webp
 
       - name: Render Cheddys Kitchen images
         if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'cheddys-kitchen' }}
