@@ -204,9 +204,10 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
                 display: "flex",
                 justifyContent: "center",
                 gap: 20,
+                marginBottom: 32,
               }}
             >
-              {["🏀", "🏈", "🏀", "🏈"].map((emoji, i) => (
+              {["🏀", "🏈", "🎓", "🏆"].map((emoji, i) => (
                 <div
                   key={i}
                   style={{
@@ -224,22 +225,20 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
                 </div>
               ))}
             </div>
-          </div>
 
-          {/* Floating price tag */}
-          <div
-            style={{
-              position: "absolute",
-              top: 20,
-              right: 0,
-              background: "linear-gradient(135deg, #22c55e, #16a34a)",
-              borderRadius: 16,
-              padding: "16px 28px",
-              boxShadow: "0 20px 60px rgba(34,197,94,0.4)",
-            }}
-          >
-            <div style={{ fontSize: 18, color: "rgba(255,255,255,0.9)" }}>Only</div>
-            <div style={{ fontSize: 36, fontWeight: 800, color: "white" }}>$20/mo</div>
+            {/* Price tag below */}
+            <div
+              style={{
+                background: "linear-gradient(135deg, #22c55e, #16a34a)",
+                borderRadius: 16,
+                padding: "18px 40px",
+                boxShadow: "0 20px 60px rgba(34,197,94,0.4)",
+                textAlign: "center",
+              }}
+            >
+              <div style={{ fontSize: 20, color: "rgba(255,255,255,0.9)" }}>Only</div>
+              <div style={{ fontSize: 42, fontWeight: 800, color: "white" }}>$20/mo</div>
+            </div>
           </div>
         </div>
       </div>
