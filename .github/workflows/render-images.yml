@@ -15,6 +15,7 @@ on:
           - kickback
           - blog
           - blog-save-money-kickback
+          - cheddys-kitchen
       include_video:
         description: 'Also render promo videos?'
         required: true
@@ -42,7 +43,7 @@ jobs:
         run: npm ci
 
       - name: Create output directory
-        run: mkdir -p out/affiliate-links out/trade-hub out/kickback out/blog
+        run: mkdir -p out/affiliate-links out/trade-hub out/kickback out/blog out/cheddys-kitchen
 
       - name: Render Affiliate Links images
         if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'affiliate-links' }}
@@ -123,6 +124,21 @@ jobs:
         with:
           name: save-money-kickback
           path: out/blog/4-save-money-kickback.webp
+
+      - name: Render Cheddys Kitchen images
+        if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'cheddys-kitchen' }}
+        run: |
+          npx remotion still Cheddys-1-Banner out/cheddys-kitchen/1-banner.png
+          npx remotion still Cheddys-2-Stats out/cheddys-kitchen/2-stats.png
+          npx remotion still Cheddys-3-Sports out/cheddys-kitchen/3-sports.png
+          npx remotion still Cheddys-4-Pricing out/cheddys-kitchen/4-pricing.png
+
+      - name: Upload Cheddys Kitchen images
+        if: ${{ github.event.inputs.app == 'all' || github.event.inputs.app == 'cheddys-kitchen' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: cheddys-kitchen-images
+          path: out/cheddys-kitchen/
 
       - name: Create videos directory
         if: ${{ github.event.inputs.include_video == 'yes' }}
