@@ -90,6 +90,7 @@ import { WhopReview, whopReviewSchema } from "./Blog/WhopReview";
 import { WhopVsGumroad, whopVsGumroadSchema } from "./Blog/WhopVsGumroad";
 import { SaveMoney, saveMoneySchema } from "./Blog/SaveMoney";
 import { SaveMoneyKickback, saveMoneyKickbackSchema } from "./Blog/SaveMoneyKickback";
+import { KickbackReview, kickbackReviewSchema } from "./Blog/KickbackReview";
 
 // Cheddy's Kitchen imports
 import { CheddysBanner, cheddysBannerSchema } from "./CheddysKitchen/CheddysBanner";
@@ -348,6 +349,16 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         schema={saveMoneyKickbackSchema}
+        defaultProps={{}}
+      />
+      <Composition
+        id="Blog-5-KickbackReview"
+        component={KickbackReview}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={kickbackReviewSchema}
         defaultProps={{}}
       />
 
