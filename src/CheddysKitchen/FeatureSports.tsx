@@ -73,7 +73,7 @@ export const FeatureSports: React.FC<z.infer<typeof featureSportsSchema>> = () =
 
           <h1
             style={{
-              fontSize: 100,
+              fontSize: 115,
               fontWeight: 800,
               color: "white",
               margin: 0,
@@ -133,7 +133,7 @@ export const FeatureSports: React.FC<z.infer<typeof featureSportsSchema>> = () =
               </div>
               <div
                 style={{
-                  fontSize: 56,
+                  fontSize: 64,
                   fontWeight: 800,
                   color: "white",
                   marginBottom: 12,
@@ -141,7 +141,7 @@ export const FeatureSports: React.FC<z.infer<typeof featureSportsSchema>> = () =
               >
                 {sport.name}
               </div>
-              <div style={{ fontSize: 26, color: "rgba(255,255,255,0.7)" }}>
+              <div style={{ fontSize: 30, color: "rgba(255,255,255,0.7)" }}>
                 {sport.desc}
               </div>
             </div>

@@ -64,7 +64,7 @@ export const FeaturePricing: React.FC<z.infer<typeof featurePricingSchema>> = ()
 
           <h1
             style={{
-              fontSize: 110,
+              fontSize: 125,
               fontWeight: 800,
               color: "white",
               lineHeight: 1.05,
@@ -89,12 +89,12 @@ export const FeaturePricing: React.FC<z.infer<typeof featurePricingSchema>> = ()
 
           <p
             style={{
-              fontSize: 36,
+              fontSize: 42,
               color: "white",
               lineHeight: 1.4,
               margin: 0,
               marginBottom: 48,
-              maxWidth: 580,
+              maxWidth: 620,
               fontWeight: 500,
             }}
           >
@@ -132,7 +132,7 @@ export const FeaturePricing: React.FC<z.infer<typeof featurePricingSchema>> = ()
                 >
                   ✓
                 </div>
-                <span style={{ fontSize: 28, color: "white", fontWeight: 500 }}>{feature}</span>
+                <span style={{ fontSize: 32, color: "white", fontWeight: 500 }}>{feature}</span>
               </div>
             ))}
           </div>
@@ -174,7 +174,7 @@ export const FeaturePricing: React.FC<z.infer<typeof featurePricingSchema>> = ()
 
             <div
               style={{
-                fontSize: 120,
+                fontSize: 140,
                 fontWeight: 800,
                 background: "linear-gradient(135deg, #22c55e, #fbbf24)",
                 WebkitBackgroundClip: "text",

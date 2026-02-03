@@ -89,7 +89,7 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
           {/* Main headline */}
           <h1
             style={{
-              fontSize: 116,
+              fontSize: 130,
               fontWeight: 800,
               color: "white",
               lineHeight: 1.02,
@@ -114,12 +114,12 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
           {/* Subtitle */}
           <p
             style={{
-              fontSize: 38,
+              fontSize: 44,
               color: "white",
               lineHeight: 1.4,
               margin: 0,
               marginBottom: 44,
-              maxWidth: 650,
+              maxWidth: 700,
               fontWeight: 500,
             }}
           >
@@ -139,12 +139,12 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
               <div
                 key={feature}
                 style={{
-                  padding: "20px 40px",
+                  padding: "22px 44px",
                   borderRadius: 100,
                   background: "rgba(34,197,94,0.15)",
                   border: "1px solid rgba(34,197,94,0.3)",
                   color: "white",
-                  fontSize: 28,
+                  fontSize: 32,
                   fontWeight: 600,
                 }}
               >
@@ -181,12 +181,12 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
                 marginBottom: 32,
               }}
             >
-              <div style={{ fontSize: 28, color: "rgba(255,255,255,0.8)", marginBottom: 10 }}>
+              <div style={{ fontSize: 32, color: "rgba(255,255,255,0.8)", marginBottom: 10 }}>
                 Last Month ROI
               </div>
               <div
                 style={{
-                  fontSize: 140,
+                  fontSize: 160,
                   fontWeight: 800,
                   background: "linear-gradient(135deg, #22c55e, #fbbf24)",
                   WebkitBackgroundClip: "text",
@@ -236,8 +236,8 @@ export const CheddysBanner: React.FC<z.infer<typeof cheddysBannerSchema>> = () =
                 textAlign: "center",
               }}
             >
-              <div style={{ fontSize: 20, color: "rgba(255,255,255,0.9)" }}>Only</div>
-              <div style={{ fontSize: 42, fontWeight: 800, color: "white" }}>$20/mo</div>
+              <div style={{ fontSize: 24, color: "rgba(255,255,255,0.9)" }}>Only</div>
+              <div style={{ fontSize: 48, fontWeight: 800, color: "white" }}>$20/mo</div>
             </div>
           </div>
         </div>
