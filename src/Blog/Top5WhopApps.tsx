@@ -5,11 +5,11 @@ export const top5WhopAppsSchema = z.object({});
 
 export const Top5WhopApps: React.FC<z.infer<typeof top5WhopAppsSchema>> = () => {
   const apps = [
-    { rank: "1", name: "Kickback", desc: "Cashback" },
-    { rank: "2", name: "Analytics", desc: "Insights" },
-    { rank: "3", name: "Automations", desc: "Workflows" },
-    { rank: "4", name: "Affiliates", desc: "Growth" },
-    { rank: "5", name: "Discord Bot", desc: "Community" },
+    { rank: "1", name: "Digital Products AI", desc: "AI Design Generator" },
+    { rank: "2", name: "Community Forum", desc: "Discussions & Posts" },
+    { rank: "3", name: "Website Embed", desc: "Integrate External Sites" },
+    { rank: "4", name: "Affiliate Link Hub", desc: "Link Directory" },
+    { rank: "5", name: "Interactive Games", desc: "Boost Engagement" },
   ];
 
   return (
